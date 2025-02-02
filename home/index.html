@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>茶葉專賣店 - 官方網站</title>
+    <title>Ricky’s Tea Journey</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
     <!-- 導覽列 -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container">
-            <a class="navbar-brand" href="#">茶葉專賣店</a>
+            <a class="navbar-brand" href="#">Ricky’s Tea Journey</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">首頁</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">產品</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">關於我們</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">聯絡我們</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Main</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -28,42 +28,42 @@
     <!-- 橫幅區域 -->
     <header class="bg-success text-white text-center py-5">
         <div class="container">
-            <h1>歡迎來到茶葉專賣店</h1>
-            <p class="lead">提供最優質的茶葉，品味自然風味</p>
+            <h1>Welcome to Ricky’s Tea Journey</h1>
+            <p class="lead">Offering the finest tea leaves, savoring the taste of nature.</p>
         </div>
     </header>
 
     <!-- 產品展示區 -->
     <section class="container my-5">
-        <h2 class="text-center mb-4">我們的茶葉產品</h2>
+        <h2 class="text-center mb-4">Our product</h2>
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="茶葉產品">
+                    <img src="{% static 'images/green_tea.webp' %}" class="card-img-top" alt="green_tea">
                     <div class="card-body">
-                        <h5 class="card-title">綠茶</h5>
-                        <p class="card-text">來自台灣高山，清香甘甜。</p>
-                        <a href="#" class="btn btn-success">查看更多</a>
+                        <h5 class="card-title">Green Tea</h5>
+                        <p class="card-text">From Taiwan's high mountains, with a fresh fragrance and a sweet taste.</p>
+                        <a href="#" class="btn btn-success">More</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="茶葉產品">
+                    <img src="{% static 'images/oolong_tea.webp' %}" class="card-img-top" alt="Oolong_tea">
                     <div class="card-body">
-                        <h5 class="card-title">烏龍茶</h5>
-                        <p class="card-text">半發酵茶，香氣濃郁，回甘持久。</p>
-                        <a href="#" class="btn btn-success">查看更多</a>
+                        <h5 class="card-title">Oolong Tea</h5>
+                        <p class="card-text">Semi-fermented tea with a strong aroma and a long-lasting sweet aftertaste.</p>
+                        <a href="#" class="btn btn-success">More</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="茶葉產品">
+                    <img src="{% static 'images/Black_tea.webp' %}" class="card-img-top" alt="Black_tea">
                     <div class="card-body">
-                        <h5 class="card-title">紅茶</h5>
-                        <p class="card-text">全發酵茶，口感濃郁，帶有蜜香。</p>
-                        <a href="#" class="btn btn-success">查看更多</a>
+                        <h5 class="card-title">Black Tea</h5>
+                        <p class="card-text">Fully fermented tea with a rich flavor and a hint of honey aroma.</p>
+                        <a href="#" class="btn btn-success">More</a>
                     </div>
                 </div>
             </div>
