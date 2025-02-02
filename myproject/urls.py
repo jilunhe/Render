@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from home.views import home_page 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include("home.urls")),
+    path("", home_page, name="home"),  # 直接設定首頁
+    path("home/", include("home.urls")),  # 其他 home 相關的 URL
 ]
